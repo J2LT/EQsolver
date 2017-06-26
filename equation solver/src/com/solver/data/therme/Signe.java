@@ -4,12 +4,13 @@ import com.solver.data.Therme;
 
 public class Signe extends Therme{
 
-	char signe;
+	 private char signe;
 	
 	protected Signe(String t, char s) {
 		super(t);
 		this.signe = s;
 	}
 
+	
 	
 }
