@@ -1,5 +1,8 @@
 package com.solver.Analyse;
-	public class Interpretation {
+
+import com.solver.data.Equa;
+
+public class Interpretation {
 
 	Equa e = new Equa();
 		
@@ -24,11 +27,8 @@ package com.solver.Analyse;
 					}
 				}
 	    	}
-	    	
-	    	
-					    
-
-	        Equa();
 	    }
+	    
+	Equa();
 	}
 
