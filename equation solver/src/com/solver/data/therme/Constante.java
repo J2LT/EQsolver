@@ -4,12 +4,18 @@ import com.solver.data.Therme;
 
 public class Constante extends Therme{
 	
-	double valeur;
+	private double valeur;
 
 	protected Constante(String t, double v) {
 		super(t);
 		this.valeur = v;
 	}
 
+	public void setValue(double d){
+		this.valeur = d;
+	}
 	
+	public double getValue(){
+		return valeur;
+	}
 }
