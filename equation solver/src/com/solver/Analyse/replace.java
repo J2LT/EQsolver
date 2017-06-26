@@ -8,20 +8,20 @@ public class replace {
     	
     	for(int i = 0; i <= tabIn.length ; i = i+1 ) {
 			if(tabIn[i] == '(' || tabIn[i] == '[') {
-				String d = tabIn[i]+"";
+				String d = tabIn[i-1]+"";
 				if(verifyNL.verifyNb(d) == true || verifyNL.verifyNb(d) == true) {
-					for(int u = 0; u <= tabIn.length + 1 ; u = u+1) {
-						if(u == i) {
-							tabOut2[u] ='*';
-							u = u+1 ;
-						}
-						tabOut2[u] = '*';
+						tabOut2[y] ='*';
 						y = y+1 ;
-					}
-				}
+				}	
 			}
+			tabOut2[y]=tabIn[i];
+			y = y+1;
     	}
-    	return tabOut2;
+    	char[] tabOut3 = new char[y];
+    	for(int i = 0; i <= y; i = i+1){
+    		tabOut3[y]=tabOut2[y];
+    	}
+    	return tabOut3;
     }
 	
 	public static char[] power(char tabIn[]) {
@@ -29,16 +29,15 @@ public class replace {
 			if(tabIn[i] == '^') {
 				String d = tabIn[i-1]+"";
 				String v = tabIn[i+1]+"";
-				boolean dl = verifyNL.verifyLe(d);
 				boolean dn = verifyNL.verifyNb(d);
 				boolean vl = verifyNL.verifyLe(v);
 				boolean vn = verifyNL.verifyNb(v);
-				if(n == true) {
-					
+				if(dn == true) {
+					if()
 				}
-				else if(l == true){
-					
+			
 				}
+				
 				else System.out.println ("code error: type de therme invalide");
 			}
 		}
