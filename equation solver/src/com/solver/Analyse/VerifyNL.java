@@ -8,7 +8,7 @@ package com.solver.Analyse;
 	    public static boolean verifyNb(String s){	
 	    	String d = "";
 
-	    	for( int i = 0 ;  i <= 10 ; i = i+1)
+	    	for( int i = 0 ;  i <= 10 ; i++)
 	    		d = listNb[i]+"";
 	    		if(s == d) {
 	    			return true;
@@ -21,7 +21,7 @@ package com.solver.Analyse;
 	    
 	     public static boolean verifyLe(String s){	
 	    	 String d = "";
-	    	 for( int i = 0 ;  i <= 26 ; i = i+1)
+	    	 for( int i = 0 ;  i <= 26 ; i++)
 	    	   	d = listLe[i]+"";
    	    		if(s == d) {
 		  			return true;
@@ -30,6 +30,6 @@ package com.solver.Analyse;
 	  	   			return false;
 	       		}	    		    		
 	    }
-	     
+	     public static char[] signePower
 	}
 

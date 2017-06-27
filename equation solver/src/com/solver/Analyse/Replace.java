@@ -6,7 +6,7 @@ public class Replace {
     	int y = 0;
     	char tabOut2[] = new char[tabIn.length*2];
     	
-    	for(int i = 0; i <= tabIn.length ; i = i+1 ) {
+    	for(int i = 0; i <= tabIn.length ; i++ ) {
 			if(tabIn[i] == '(' || tabIn[i] == '[') {
 				String d = tabIn[i-1]+"";
 				if(VerifyNL.verifyNb(d) == true || VerifyNL.verifyNb(d) == true) {
@@ -25,7 +25,7 @@ public class Replace {
     }
 	
 	public static char[] power(char tabIn[]) {
-		for(int i = 0; i <= tabIn.length ; i = i+1 ) {
+		for(int i = 0; i <= tabIn.length ; i++ ) {
 			if(tabIn[i] == '^') {
 				String b = tabIn[i-1]+"";
 				String a = tabIn[i+1]+"";
@@ -34,9 +34,16 @@ public class Replace {
 				boolean an = VerifyNL.verifyNb(a);
 				if(bn == true) {
 					if(a=="("){
+						Interpretation.findParenthese(tabIn,i); //TODO voir avec Pierre ce que sa méthode retourne pour savoir ce que j'en fais
+					}
+					else if(al == true) {
+						System.out.println("code error : this programm does not take variable power on (for the moment)");
+					}
+					else if(an == true) {
+						int n;
+						n = Integer.parseInt(a);
 						
 					}
-			
 				}
 				
 				else System.out.println ("code error: type de therme invalide");

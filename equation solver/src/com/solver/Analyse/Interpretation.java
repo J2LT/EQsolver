@@ -19,7 +19,7 @@ public class Interpretation {
 			return e;
 		}
 		
-		public char[] findParenthese(char[] c, int i){
+		public static char[] findParenthese(char[] c, int i){
 
             char caract = c[i];
             int nbrOpen = 1;
