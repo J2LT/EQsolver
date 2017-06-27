@@ -7,7 +7,7 @@ public class Interpretation {
 		public static Equa interpretation(String s){
 			
 			char[] tabIn = s.toCharArray();
-			char tabOut1[] = replace.multiHide(tabIn);
+			char tabOut1[] = Replace.multiHide(tabIn);
 			Equa e = new Equa();
 			
 			
