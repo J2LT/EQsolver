@@ -6,11 +6,11 @@ import com.solver.data.Therme;
 
 public class Simplification {
 
-	public ArrayList<Therme> simplify(){
+	public Therme simplifyConstant(ArrayList<Therme> a){
 		
 		
 		
 		
-		return null; //replace null by new arraylist with simplify's equation in
+		return null;
 	}
 }
